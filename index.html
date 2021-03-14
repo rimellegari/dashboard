@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0287dcca47.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <!--Navbar - navbar inside a container to help in responsiveness-->
+    <div class="nav-container">
+        <!--Navbar icon-->
+        <nav class="navbar">
+            <div class="nav_icon">
+                <i class="fa fa-bars"></i> <!--look for JS function toggleSidebar-->
+            </div>
+        <!--Navbar options-->
+        <div class="navbar__left">
+            <a href="#">Item1</a>
+            <a href="#">Item2</a>
+            <a href="#" class="active_link" id="exp">Item3</a>
+       
+        </div>
+        <div class="navbar__right">
+            <a href="#" class="navbar__icon">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="#" class="navbar__icon">
+                <i class="fa fa-clock-o"></i>
+            </a>
+            
+            <a href="#" class="navbar__icon">
+                <figure class="logo"><img width="30" src="/assets/pp.jpeg" alt='useravatar'></figure><!--figure must be set as inline-->
+ 
+            </a>
+        </div>
+
+        </nav>
+        <main>
+            <section class="main__container">
+                <article class="main__title">
+                    <figure class="title">
+                        <img src="" alt="">
+                    </figure>
+                    <aside class="main__greeting">
+                        <h1>Hello Ricardo</h1>
+                        <p>Welcome back</p>
+                    </aside>
+
+                </article>
+                <div class="main__cards">
+                        <div class="card">
+                            <i>place</i>
+                            <div class="card__inner">
+                                <p>Placeholder 1</p>
+                                <span class="font-bold text-title"></span>
+                            </div>
+                        </div>
+                       
+                        <div class="card">
+                            <i>place</i>
+                            <div class="card__inner">
+                                <p>Placeholder 2</p>
+                                <span class="font-bold text-title"></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <i>place</i>
+                            <div class="card__inner">
+                                <p>Placeholder 3</p>
+                                <span class="font-bold text-title"></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <i>place</i>
+                            <div class="card__inner">
+                                <p>Placeholder 4</p>
+                                <span class="font-bold text-title"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--charts section-->
+                    <section class="charts">
+                        <div class="charts__left">
+                            <div class="charts__left__title">
+                                <h1>PlaceHolder Title</h1>
+                                <p>Texto p subs</p>
+                            </div>
+                            <i class="fa fa-usd"></i>
+                            <div id="apex1"></div>
+                        </div>
+                        <div class="charts__right">
+                            <div class="charts__right__title">
+                                <div class="">
+                                        <h1>PlaceHolder Title</h1>
+                                        <p>Texto p subs</p>
+                                </div>
+                                <i class="fa fa-usd"></i>
+                            </div>
+
+                            <div class="chart__right__cards">
+                                <div class="card1">
+                                    <h1>Income</h1>
+                                    <p>XXX</p>
+                                </div>
+                                <div class="card2">
+                                    <h1>Sales</h1>
+                                    <p>XXX</p>
+                                </div>
+                                <div class="card3">
+                                    <h1>XXX</h1>
+                                    <p>XXX</p>
+                                </div>
+                                <div class="card4">
+                                    <h1>Income</h1>
+                                    <p>XXX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>                    
+            </section>
+        </main>
+        <aside id="sidebar">
+            <div class="sidebar__title">
+                <figure class="logo2">
+                    <img src="/assets/pp.jpeg" alt="logo"><!--change image-->
+                    <h1>Ricardo</h1>
+                </figure>
+                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar"></i>
+            </div>
+            <nav class="sidebar__menu">
+                <div class="sidebar__link active_menu_link">
+                    <i class="fa fa-home">Dashboard</i>
+                </div>
+            </nav>
+            <h2>Sources</h2>
+            <div class="sidebar__link"> <!--repeat this div for each category-->
+                <i class="fa fa-user-secre"></i>
+                <a href="#" class="">Books</a> 
+            </div>
+        </aside>
+    </div>
+    
+</body>
+</html>

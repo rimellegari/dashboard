@@ -1,0 +1,68 @@
+/* general structure*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+a {
+    text-decoration: none !important;
+    color: white;
+}
+/* page style*/
+.logo {
+    display:inline ;
+    margin: 0%;
+    padding: 0%;
+}
+
+.logo2 img {
+    width: 30px;
+    height: 30px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*grid styling*/
+
+.nav-container {
+    display: grid; 
+    height: 100vh;
+    grid-template-columns: 0.8fr 1fr 1fr 1fr; /*set the grid for the whole page with sidemenu being the first column to the  left*/
+    grid-template-rows: 0.2fr 3fr; /*navbar and charts area*/
+    grid-template-areas:
+    "sidebar nav nav nav"
+    "sidebar main main main";
+}
+
+.navbar {
+    background-color: #525f6b;
+    color: white;
+    grid-area: nav;
+    height: 60px;
+    display: flex; /*organize elements within navbar*/
+    align-items: center; /*centralizing vertically*/
+    justify-content: space-between; /* horizontal distribution*/ /*space-between will 'push' the elements to both extremities of the navbar*/
+    padding:  0px 30px 0px 30px; /*left top right bottom*/
+    border-bottom: 3px solid #15d1ea;
+}
+.navbar__left{
+    color: white;
+
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+.nav_icon {
+    display: none;
+}
+
+.nav_icon > i {
+    font-size: 26px;
+    color: white;
+}
+
