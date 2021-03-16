@@ -123,6 +123,35 @@ main {
     font-size: 0.9rem;
     font-weight: 700;
 }
+/* cards grid see karatedo project*/
+.main__cards {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    gap:30px;
+    margin: 20px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70px;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 5px 5px 13px #dfdfdf, -5px -5px 13px #fff;
+
+}
+
+.card__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__inner > span {
+    font-size: 1.5rem;
+}
 #sidebar {
     background-color: teal;
     grid-area: sidebar;
