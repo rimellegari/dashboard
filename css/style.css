@@ -39,7 +39,7 @@ body {
 }
 
 .navbar {
-    background-color: #525f6b;
+    background-color: #777;
     color: white;
     grid-area: nav;
     height: 60px;
@@ -49,9 +49,9 @@ body {
     padding:  0px 30px 0px 30px; /*left top right bottom*/
     border-bottom: 3px solid #15d1ea;
 }
-.navbar__left{
+.navbar__left a{
     color: white;
-
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 1.5px;
 }
@@ -66,3 +66,68 @@ body {
     color: white;
 }
 
+.navbar__left .active_link {
+    border-bottom: 3px solid #15d1ea;
+    padding-bottom: 12px;
+}
+
+.navbar__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__right > a {
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar__right > a > i {
+    color: white;
+    font-size: 16px;
+    border-radius: 50px;
+    background: #777;
+    
+
+}
+
+/*sidebar stylying*/
+main {
+    background:#f3f4f6;
+    grid-area: main;
+    overflow-y: auto;
+}
+
+
+.main__container {
+    padding: 20px 50px;
+}
+
+.main__title {
+    display: flex;
+    align-items: center;
+}
+
+.main__title > img {
+    max-height: 100px;
+    object-fit: contain; /* propriedade que garante a manutenção da escala*/
+    margin-right: 20px;
+}
+
+.main__greeting > h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+
+}
+.main__greeting > p {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+#sidebar {
+    background-color: teal;
+    grid-area: sidebar;
+    overflow-y: auto;
+    padding: 20px;
+    -webkit-transition: all 0.5s;
+    transition:  all 0.5s;
+}

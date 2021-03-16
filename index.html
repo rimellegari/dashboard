@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/0287dcca47.js" crossorigin="anonymous"></script>
     <title>Dashboard</title>
 </head>
-<body>
+<body id="body">
     <!--Navbar - navbar inside a container to help in responsiveness-->
     <div class="nav-container">
         <!--Navbar icon-->
@@ -17,18 +17,17 @@
             <div class="nav_icon">
                 <i class="fa fa-bars"></i> <!--look for JS function toggleSidebar-->
             </div>
-        <!--Navbar options-->
-        <div class="navbar__left">
-            <a href="#">Item1</a>
-            <a href="#">Item2</a>
-            <a href="#" class="active_link" id="exp">Item3</a>
-       
-        </div>
-        <div class="navbar__right">
-            <a href="#" class="navbar__icon">
+             <!--Navbar options-->
+             <div class="navbar__left">
+                <a href="#">Subscribers</a>
+                <a href="#">Video Management</a>
+                <a href="#" class="active_link" id="exp">Item3</a>
+             </div>
+             <div class="navbar__right">
+            <a href="#">
                 <i class="fa fa-search"></i>
             </a>
-            <a href="#" class="navbar__icon">
+            <a href="#">
                 <i class="fa fa-clock-o"></i>
             </a>
             
@@ -36,11 +35,13 @@
                 <figure class="logo"><img width="30" src="/assets/pp.jpeg" alt='useravatar'></figure><!--figure must be set as inline-->
  
             </a>
-        </div>
+            </div>
 
         </nav>
         <main>
             <section class="main__container">
+                <!--Main title start-->
+
                 <article class="main__title">
                     <figure class="title">
                         <img src="" alt="">
@@ -49,14 +50,17 @@
                         <h1>Hello Ricardo</h1>
                         <p>Welcome back</p>
                     </aside>
-
                 </article>
+                <!-- MAIN TITLE ENDS HERE -->
+
+                <!-- MAIN CARDS STARTS HERE -->
                 <div class="main__cards">
+
                         <div class="card">
                             <i>place</i>
                             <div class="card__inner">
                                 <p>Placeholder 1</p>
-                                <span class="font-bold text-title"></span>
+                                <span class="font-bold text-title">texto</span>
                             </div>
                         </div>
                        
@@ -82,8 +86,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--charts section-->
+                
+                    <!--charts section-->
                     <section class="charts">
                         <div class="charts__left">
                             <div class="charts__left__title">
@@ -121,7 +125,7 @@
                                 </div>
                             </div>
                         </div>
-                    </section>                    
+                    </section>                 
             </section>
         </main>
         <aside id="sidebar">
@@ -136,12 +140,13 @@
                 <div class="sidebar__link active_menu_link">
                     <i class="fa fa-home">Dashboard</i>
                 </div>
-            </nav>
+            
             <h2>Sources</h2>
             <div class="sidebar__link"> <!--repeat this div for each category-->
-                <i class="fa fa-user-secre"></i>
+                <i class="fa fa-user-secret"></i>
                 <a href="#" class="">Books</a> 
             </div>
+        </nav>
         </aside>
     </div>
     
