@@ -247,7 +247,7 @@ var options = {
     height: 350
   },
   title: {
-    text: 'CandleStick Chart',
+    text: '',
     align: 'left'
   },
   xaxis: {

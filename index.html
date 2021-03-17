@@ -19,9 +19,9 @@
             </div>
              <!--Navbar options-->
              <div class="navbar__left">
-                <a href="#">Subscribers</a>
-                <a href="#">Video Management</a>
-                <a href="#" class="active_link" id="exp">Item3</a>
+                <a href="#">Other Charts</a>
+                <a href="#"></a>
+                <a href="#" class="active_link" id="exp">Dashboard</a>
              </div>
              <div class="navbar__right">
             <a href="#">
@@ -57,10 +57,10 @@
                 <div class="main__cards">
 
                         <div class="card">
-                            <i>place</i>
+                            <i class="fas fa-hashtag"></i>
                             <div class="card__inner">
-                                <p>Placeholder 1</p>
-                                <span class="font-bold text-title"></span>
+                                <p>Number of transactions</p>
+                                <span class="font-bold text-title">33</span>
                             </div>
                         </div>
                        
@@ -92,10 +92,10 @@
                         <div class="charts__left">
                             <div class="charts__left__title">
                             <div>
-                                <h1>PlaceHolder Title</h1>
-                                <p>texto para sub</p>
+                                <h1>BTC value chart</h1>
+                                <p>Follow the trends</p>
                             </div>
-                                <i class="fa fa-usd"></i>
+                                <i class="fa fa-btc"></i>
                             
                             </div>
                         
@@ -104,28 +104,28 @@
                         <div class="charts__right">
                             <div class="charts__right__title">
                                 <div class="">
-                                        <h1>PlaceHolder Title</h1>
-                                        <p>Texto p subs</p>
+                                        <h1>Summary</h1>
+                                        <p>Most relevant data</p>
                                 </div>
-                                <i class="fa fa-usd"></i>
+                                <i class="fa fa-btc"></i>
                             </div>
 
                             <div class="chart__right__cards">
                                 <div class="card1">
-                                    <h1>Income</h1>
+                                    <h1>Current Value</h1>
                                     <p>XXX</p>
                                 </div>
                                 <div class="card2">
-                                    <h1>Sales</h1>
+                                    <h1>ATH</h1>
                                     <p>XXX</p>
                                 </div>
                                 <div class="card3">
-                                    <h1>XXX</h1>
-                                    <p>XXX</p>
+                                    <h1>Reallocate asset</h1>
+                                    <p>Exchange for other crypto</p>
                                 </div>
                                 <div class="card4">
-                                    <h1>Income</h1>
-                                    <p>XXX</p>
+                                    <h1>Stop Loss</h1>
+                                    <p>Inactive</p>
                                 </div>
                             </div>
                         </div>
@@ -135,20 +135,49 @@
         <aside id="sidebar">
             <div class="sidebar__title">
                 <figure class="logo2">
-                    <img src="/assets/pp.jpeg" alt="logo"><!--change image-->
-                    <h1>Ricardo</h1>
+                    <i  id="wolf" class="fab fa-wolf-pack-battalion"></i>
+                    <h1>Wolf byte</h1>
                 </figure>
-                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar"></i>
+                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar()"></i>
             </div>
             <nav class="sidebar__menu">
-                <div class="sidebar__link active_menu_link">
-                    <i class="fa fa-home">Dashboard</i>
+                <div class="sidebar__link">
+                    <i class="fa fa-home"></i>
+                    <a href="#">Home</a>
                 </div>
             
-            <h2>Sources</h2>
+            <h2>Options</h2>
             <div class="sidebar__link"> <!--repeat this div for each category-->
-                <i class="fa fa-user-secret"></i>
-                <a href="#" class="">Books</a> 
+                <i class="fas fa-exchange-alt"></i>
+                <a href="#" class="">Buy | Sell</a> 
+            </div>
+            <div class="sidebar__link"> <!--repeat this div for each category-->
+                <i class="fas fa-arrows-alt-v"></i>
+                <a href="#" class="">Deposit | Withdraw</a> 
+            </div>
+            <div class="sidebar__link"> <!--repeat this div for each category-->
+                <i class="fas fa-ban"></i>
+                <a href="#" class="">Set Stop Loss</a> 
+            </div>
+            <div class="sidebar__link"> <!--repeat this div for each category-->
+                <i class="fas fa-history"></i>
+                <a href="#" class="">Trade History</a> 
+            </div>
+            <div class="sidebar__link"> <!--repeat this div for each category-->
+                <i class="fas fa-cog"></i>
+                <a href="#" class="">Settings</a> 
+            </div>
+            <div class="sidebar__link"> <!--repeat this div for each category-->
+                <i class="fas fa-key"></i>
+                <a href="#" class="">API Key</a>
+            </div>
+            <div class="sidebar__link"> <!--repeat this div for each category-->
+                <i class="far fa-question-circle"></i>
+                <a href="#" class="">Help</a>
+            </div>
+            <div class="sidebar__link"> <!--repeat this div for each category-->
+                <i class="fas fa-sign-out-alt"></i>
+                <a href="#" class="">Logout</a>
             </div>
         </nav>
         </aside>
